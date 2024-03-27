@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@babel/preset-env"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@babel/preset-react"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+</head>
+
+<body>
+    <h1>Crypto Tracker</h1>
+    <div>
+    </div>
+    
+    <input type="text" id="cryptoInput" placeholder="Enter Crypto Name (e.g., btcusdt)">
+    <button id="myButton">Subscribe</button>
+    <div>
+        <div style="display:flex;">
+            <p id="avgprice">Loading...</p>
+            <input type="checkbox" id="maCheckbox" name="monCheckbox">
+            <label for="monCheckbox">Case à cocher</label><br>
+        
+            
+        </div>
+        <input type="number" id="prefix_1" value="0" placeholder="0" min="0">
+        <input type="number" id="prefix_2" value="8" placeholder="8" min="1">
+        <input type="number" id="intervalvoice" value="3000" placeholder="3000" step="1000" min="1000">
+        <input type="number" id="periode" value="3" placeholder="3" min="0">
+        <input type="number" id="deviation" value="2" placeholder="2" min="0">
+
+    </div>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+
+
+    <script src="js/jscript.js"></script>
+
+    
+</body>
+
+
+</html>
